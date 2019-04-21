@@ -1,0 +1,3 @@
+# Commands
+commands.codecraft.usage=/codecraft <command>
+commands.codecraft.eval.usage=/codecraft eval <command>
