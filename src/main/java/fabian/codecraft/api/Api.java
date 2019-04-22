@@ -22,6 +22,8 @@ public class Api {
     public void log(String s) {
         if (ScriptContainer.CurrentExecutor instanceof EntityPlayerMP) {
             ScriptContainer.CurrentExecutor.sendMessage(new TextComponentTranslation(s));
+        } else {
+            ServerUtils.NotifyOPs(s);
         }
     }
 

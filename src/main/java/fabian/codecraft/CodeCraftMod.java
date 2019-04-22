@@ -1,6 +1,7 @@
 package fabian.codecraft;
 
 import fabian.codecraft.api.Api;
+import fabian.codecraft.client.CreativeTabCodeCraft;
 import fabian.codecraft.controller.ScriptController;
 import fabian.codecraft.init.ModCommands;
 import fabian.codecraft.init.ModMessages;
@@ -20,6 +21,8 @@ import java.util.UUID;
 @Mod(modid = CodeCraftMod.MODID, name = CodeCraftMod.NAME, version = CodeCraftMod.VERSION)
 public class CodeCraftMod
 {
+    public static final CreativeTabCodeCraft creativeTab = new CreativeTabCodeCraft();
+
     public static final String MODID = "codecraft";
     public static final String NAME = "Code Craft Mod";
     public static final String VERSION = "1.0";
