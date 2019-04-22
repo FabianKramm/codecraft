@@ -1,5 +1,6 @@
 package fabian.codecraft;
 
+import fabian.codecraft.api.Api;
 import fabian.codecraft.controller.ScriptController;
 import fabian.codecraft.init.ModCommands;
 import fabian.codecraft.init.ModMessages;
@@ -39,6 +40,7 @@ public class CodeCraftMod
 
         ModMessages.registerMessages();
 
+        new Api();
         new ScriptController();
 
         proxy.preInit();

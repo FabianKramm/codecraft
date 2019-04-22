@@ -1,7 +1,6 @@
 package fabian.codecraft.controller;
 
 import fabian.codecraft.api.Api;
-import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.Entity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -99,13 +98,8 @@ public class ScriptContainer {
             if (this.engine == null) {
                 this.hasError = true;
             } else {
-                // Iterator var2 = Data.entrySet().iterator();
-                // while(var2.hasNext()) {
-                //    this.engine.put((String)entry.getKey(), entry.getValue());
-                // }
-
                 this.engine.put("log", new ScriptContainer.Log());
-                this.engine.put("api", Api.class);
+                this.engine.put("api", Api.Instance);
 
                 this.init = false;
             }

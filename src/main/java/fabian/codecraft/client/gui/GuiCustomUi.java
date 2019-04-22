@@ -2,6 +2,7 @@ package fabian.codecraft.client.gui;
 
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.resources.I18n;
 
 import java.io.IOException;
 
@@ -32,5 +33,4 @@ public class GuiCustomUi extends GuiScreen {
     public boolean doesGuiPauseGame() {
         return true;
     }
-
 }
